@@ -1,6 +1,6 @@
 ## Sistema de Votos
 
-Sistema de votos feito em php e reacjs
+Sistema de votos feito em Laravel e ReactJS.
 
 ### Api Endpoints
 
@@ -26,6 +26,6 @@ Sistema de votos feito em php e reacjs
 * /enquete/nova - Criar
 * /enquete/editar/id - Alterar
 * /enquete/visualiza/id - Ver todas as enquetes
-* /respostas/pergunta/id - Cria Resposta
+* /respostas/enquete/id - Cria Resposta
 
 
