@@ -39,6 +39,14 @@ class EnqueteController extends Controller
         return response()->json($enquete,200);
     }
 
+    public function updateStatus(Request $request, $id){
+
+        $enquete = Enquete::find($id);
+        $enquete->update($request->all());
+
+        return response()->json($enquete,200);
+    }
+
     public function delete($id){
         
         $enquete = Enquete::find($id);

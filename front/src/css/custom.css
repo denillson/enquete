@@ -74,6 +74,8 @@ body {
 
 .td-buttons button {
     margin-left: 5px;   
+    width: 60px;
+    height: 40px;
 }
 
 /*Perguntas*/

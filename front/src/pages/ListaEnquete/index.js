@@ -9,7 +9,8 @@ export default class ListaEnquete extends Component {
 
         this.state = {
             dadosEnquete: [],
-            erro: ''
+            erro: '',
+            color: ''
         }
 
         this.deleteEnquete = this.deleteEnquete.bind(this)
@@ -73,7 +74,14 @@ export default class ListaEnquete extends Component {
                                                     <td>{item.nome}</td>
                                                     <td><Moment format={'DD/MM/YYYY'}>{item.data_inicio}</Moment></td>
                                                     <td><Moment format={'DD/MM/YYYY'}>{item.data_fim}</Moment></td>
-                                                    <td><span className="badge badge-success">{item.status}</span></td>
+                                                    <td>{(item.status === "Em Andamento"  ? 
+                                                    (
+                                                        <span className="badge badge-success">{item.status}</span>
+                                                    ) 
+                                                    : (
+                                                        <span className="badge badge-danger">{item.status}</span>
+                                                    ) 
+                                                    )}</td>
                                                     <td className="td-buttons col-xl-3 col-lg-4">
                                                     <Link to={`/enquete/editar/${item.id}`}>
                                                         <button className="btn btn-info">

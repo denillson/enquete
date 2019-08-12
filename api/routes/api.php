@@ -6,6 +6,7 @@ Route::prefix('v1')->group(function () {
     Route::post('/enquete','EnqueteController@store');
     Route::get('/enquetes','EnqueteController@index');
     Route::put('/enquete/{id}','EnqueteController@update');
+    Route::put('/enquete/status/{id}','EnqueteController@updateStatus');
     Route::delete('/enquete/{id}','EnqueteController@delete');
 
     Route::post('/pergunta','PerguntasController@store');

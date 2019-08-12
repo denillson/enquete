@@ -34,7 +34,7 @@ export default class CriaEnquete extends Component {
         e.preventDefault();
 
         const { dataInicio, dataTermino, nome } = this.state;
-
+        
         const dados = {
             data_inicio: dataInicio,
             data_fim: dataTermino,

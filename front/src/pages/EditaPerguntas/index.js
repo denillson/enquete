@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 import api from '../../services/api'
 
 export default class EditaPerguntas extends Component {
@@ -85,6 +86,9 @@ export default class EditaPerguntas extends Component {
                         <div className="card">
                             <div className="card-header">
                                 <h6><strong>Perguntas</strong></h6>
+                                <Link to="/">
+                                        <button className="btn btn-info">Concluir</button>
+                                </Link>
                             </div>
                             <div className="card-body">
                                 {dadosPergunta.map((item) => {

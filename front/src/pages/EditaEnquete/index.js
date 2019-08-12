@@ -39,7 +39,8 @@ export default class EditaEnquete extends Component {
         const dados = {
             data_inicio: dataInicio,
             data_fim: dataTermino,
-            nome: nome
+            nome: nome,
+            status : 'Em Andamento',
         }
         api.put(`/enquete/${idEnquete}`, dados)
             .then((response) => {
@@ -48,7 +49,7 @@ export default class EditaEnquete extends Component {
                     dataInicio: '',
                     nome: ''
                 })
-                this.props.history.push(`/enquete/${idEnquete}/perguntas/editar`);
+                this.props.history.push(`/perguntas/enquete/${idEnquete}`);
 
             })
             .catch((err) => {
