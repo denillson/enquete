@@ -6,26 +6,26 @@ Sistema de votos feito em php e reacjs
 
 ###### Enquetes 
 
-/enquete - Criar
-/enquetes - Buscar
-/enquete/id - Alterar/Excluir
+* /enquete - Criar
+* /enquetes - Buscar
+* /enquete/id - Alterar/Excluir
 
 ###### Perguntas
 
-/pergunta - Criar
-/perguntas/enquete/id - Buscar perguntas pela enquete
-/pergunta/id - Alterar/Excluir
+* /pergunta - Criar
+* /perguntas/enquete/id - Buscar perguntas pela enquete
+* /pergunta/id - Alterar/Excluir
 
 ###### Resposta
 
-/resposta - Criar
+* /resposta - Criar
 
 ### Front Endpoints
 
-/ - Todas as enquetes
-/enquete/nova - Criar
-/enquete/editar/id - Alterar
-/enquete/visualiza/id - Ver todas as enquetes
-/respostas/pergunta/id - Cria Resposta
+* / - Todas as enquetes
+* /enquete/nova - Criar
+* /enquete/editar/id - Alterar
+* /enquete/visualiza/id - Ver todas as enquetes
+* /respostas/pergunta/id - Cria Resposta
 
 
